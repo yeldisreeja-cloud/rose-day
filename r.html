@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Rose Day ❤️</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .card {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        animation: pop 1s ease;
+        max-width: 350px;
+    }
+
+    @keyframes pop {
+        0% { transform: scale(0.7); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    .rose {
+        font-size: 70px;
+        animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+
+    h1 {
+        color: #e63946;
+        margin: 10px 0;
+    }
+
+    p {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .heart {
+        font-size: 30px;
+        color: #ff4d6d;
+        animation: heartbeat 1.2s infinite;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        25% { transform: scale(1.2); }
+        50% { transform: scale(1); }
+        75% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 10px 25px;
+        background: #ff4d6d;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background: #e63946;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="rose">🌹</div>
+    <h1>Happy Rose Day</h1>
+    <p>
+        This rose is not just a flower,<br>
+        it carries all my feelings for you 💖<br><br>
+        Will you accept this rose<br>
+        and be the reason for my smile every day?
+    </p>
+    <div class="heart">❤️</div><br>
+
+    <!-- Redirect button -->
+    <a href="wish.html" class="btn">Say Yes 😊</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A Wish From Sreeja ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Falling roses */
+    .rose {
+        position: absolute;
+        top: -50px;
+        font-size: 30px;
+        animation: fall linear infinite;
+        opacity: 0.8;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(-50px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(110vh) rotate(360deg);
+        }
+    }
+
+    .rose:nth-child(1) { left: 10%; animation-duration: 6s; }
+    .rose:nth-child(2) { left: 25%; animation-duration: 8s; }
+    .rose:nth-child(3) { left: 40%; animation-duration: 7s; }
+    .rose:nth-child(4) { left: 55%; animation-duration: 9s; }
+    .rose:nth-child(5) { left: 70%; animation-duration: 6.5s; }
+    .rose:nth-child(6) { left: 85%; animation-duration: 8.5s; }
+
+    /* Wish card */
+    .wish-card {
+        background: white;
+        padding: 45px;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        animation: fadeIn 1.2s ease;
+        max-width: 380px;
+        z-index: 2;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        color: #ff4d6d;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .signature {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #e63946;
+        font-weight: bold;
+    }
+
+    .emoji {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Falling roses -->
+<div class="rose">🌹</div>
+<div class="rose">🌹</div>
+<div class="rose">🌹</div>
+<div class="rose">🌹</div>
+<div class="rose">🌹</div>
+<div class="rose">🌹</div>
+
+<!-- Wish Card -->
+<div class="wish-card">
+    <div class="emoji">🌹❤️</div>
+    <h1>Happy Rose Day</h1>
+    <p>
+        Thank you for accepting my rose 🌹<br>
+        This little flower carries a promise<br>
+        of smiles, care, and endless warmth 💕<br><br>
+        May every falling rose remind you<br>
+        how special you are to me.
+    </p>
+    <div class="signature">
+        — With love,<br>
+        Sreeja 💖
+    </div>
+</div>
+
+</body>
+</html>
